@@ -2,103 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Parihar - Portfolio</title>
-    <style>
-        /* Center aligns the main heading and subtext */
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #f8f9fa; /* Adds a light background to make it stand out */
-        }
-
-        /* Centers the navigation menu and makes it horizontal */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            background-color: #333;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #111;
-        }
-
-        /* Adds consistent spacing to the main content layout */
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    </style>
+    <title>Aditya Parihar - Personal Webpage</title>
 </head>
 <body>
 
     <!-- HEADER SECTION -->
-    <header>
+    <header align="center">
         <h1>Aditya Parihar</h1>
-        <p><em>BTech CSE AIML Student @ UPES | Java Developer | Tech Enthusiast</em></p>
+        <p><strong>BTech CSE AIML Student @ UPES | Java Developer | Tech Enthusiast</strong></p>
     </header>
 
+    <hr>
+
     <!-- NAVIGATION MENU -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav align="center">
+        <a href="#about">About Me</a> | 
+        <a href="#skills">Technical Skills</a> | 
+        <a href="#projects">Recent Projects</a> | 
+        <a href="#contact">Get In Touch</a>
     </nav>
 
-    <!-- MAIN CONTENT -->
+    <hr>
+
+    <!-- MAIN CONTENT CONTAINER -->
     <main>
+
         <!-- ABOUT ME SECTION -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi! I'm <strong>Aditya Parihar</strong>, a BTech student pursuing Computer Science with a specialization in Artificial Intelligence and Machine Learning at UPES. I'm passionate about coding, problem-solving, and building meaningful projects.</p>
-            <p>I love working with Java and web technologies, exploring new programming concepts, and contributing to open-source projects. Currently learning full-stack development and AI/ML applications.</p>
+            <p>Hi! I'm <strong>Aditya Parihar</strong>, a BTech student pursuing Computer Science with a specialization in Artificial Intelligence and Machine Learning at UPES. I'm passionate about backend architecture, computational logic, and software development.</p>
+            <p>I love working with Java and web technologies, diving deep into data structures, and contributing to open-source systems. Currently expanding my skill set in full-stack engineering and intelligent software workflows.</p>
         </section>
 
         <hr>
 
-        <!-- SKILLS SECTION -->
+        <!-- TECHNICAL SKILLS (TABLE & LISTS STRUCTURE) -->
         <section id="skills">
-            <h2>My Skills</h2>
+            <h2>Technical Skills</h2>
+            <p>A quick overview of my foundational core skills structured by domain:</p>
             
-            <h3>Frontend Technologies</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-
-            <h3>Backend Technologies</h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Node.js</li>
-            </ul>
-
-            <h3>Databases</h3>
-            <ol>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-                <li>PostgreSQL</li>
-            </ol>
+            <!-- Structural Table for Matrix Representation -->
+            <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                <thead>
+                    <tr bgcolor="#e0e0e0">
+                        <th align="left">Frontend Stack</th>
+                        <th align="left">Backend Stack</th>
+                        <th align="left">Database Management</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript (ES6)</li>
+                                <li>React.js Framework</li>
+                            </ul>
+                        </td>
+                        <td valign="top">
+                            <ul>
+                                <li><strong>Java (Core & OOPs)</strong></li>
+                                <li>Python</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </td>
+                        <td valign="top">
+                            <ol>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <hr>
@@ -108,33 +86,92 @@
             <h2>Recent Projects</h2>
             
             <div>
-                <h3>StudyPilot</h3>
-                <p>An AI-powered study planner application designed to help students optimize academic schedules. Built using <strong>Object-Oriented Programming (OOP)</strong> principles in Java, featuring smart task planning, timeline analytics, and integrated tracking structures.</p>
-                <p><a href="https://github.com/adityaparihar21/studypilot" target="_blank">View on GitHub</a></p>
+                <h3>1. StudyPilot</h3>
+                <p>An AI-powered study planner application engineered to help students optimize their academic timelines. Built natively using <strong>Object-Oriented Programming (OOP)</strong> concepts in Java, featuring robust data parsing and progress logging tracking structures.</p>
+                <p><a href="https://github.com/adityaparihar21/studypilot" target="_blank">View Project Code on GitHub &rarr;</a></p>
             </div>
 
+            <br>
+
             <div>
-                <h3>Webcam AI Puzzle Solver</h3>
-                <p>A real-time Java gaming application that integrates computer vision and hand-tracking algorithms. Implements coordinate mapping mechanics to allow users to interact with and solve digital puzzles fluidly using physical gesture controls via a standard webcam feed.</p>
-                <p><a href="https://github.com/adityaparihar21/webcam-ai-puzzle-solver" target="_blank">View on GitHub</a></p>
+                <h3>2. Webcam AI Puzzle Solver</h3>
+                <p>A interactive desktop computer vision application built on Java. It implements real-time webcam frame reading, gesture detection, and coordinates matrix mapping to allow direct manipulation of digital puzzle assets via physical hand tracking.</p>
+                <p><a href="https://github.com/adityaparihar21/webcam-ai-puzzle-solver" target="_blank">View Project Code on GitHub &rarr;</a></p>
             </div>
         </section>
 
         <hr>
 
-        <!-- CONTACT SECTION -->
+        <!-- CONTACT & FORM SECTION -->
         <section id="contact">
-            <h2>Connect With Me</h2>
-            <p>Check out my GitHub profile to see my projects and contributions:</p>
+            <h2>Get In Touch</h2>
+            <p>Have an interesting project, open source contribution opportunity, or networking query? Drop a message directly using the structural form below:</p>
+
+            <!-- Pure HTML Interaction Form Structure -->
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><strong>Contact Directory Form</strong></legend>
+                    
+                    <br>
+                    <label for="username">Full Name: </label>
+                    <input type="text" id="username" name="senderName" placeholder="Enter your full name" required>
+                    
+                    <br><br>
+                    
+                    <label for="useremail">Email Address: </label>
+                    <input type="email" id="useremail" name="senderEmail" placeholder="name@domain.com" required>
+                    
+                    <br><br>
+                    
+                    <label for="msgsubject">Inquiry Subject: </label>
+                    <input type="text" id="msgsubject" name="emailSubject" placeholder="Project collaboration, networking, etc." size="40">
+                    
+                    <br><br>
+                    
+                    <label for="usermessage">Detailed Message:</label>
+                    <br>
+                    <textarea id="usermessage" name="messageContent" rows="6" cols="50" placeholder="Type your message body details here..." required></textarea>
+                    
+                    <br><br>
+                    
+                    <label>How did you discover my profile?</label>
+                    <br>
+                    <input type="radio" id="src-linkedin" name="discoverySource" value="linkedin">
+                    <label for="src-linkedin">LinkedIn Profile Link</label><br>
+                    
+                    <input type="radio" id="src-github" name="discoverySource" value="github">
+                    <label for="src-github">GitHub Repositories Tab</label><br>
+                    
+                    <input type="radio" id="src-referral" name="discoverySource" value="referral">
+                    <label for="src-referral">Peer Referral / Direct Connection</label>
+                    
+                    <br><br>
+                    
+                    <input type="checkbox" id="newsletter" name="subscribeStatus" value="yes" checked>
+                    <label for="newsletter">Keep me updated on open-source project developments</label>
+                    
+                    <br><br>
+                    
+                    <input type="submit" value="Submit Form Data"> 
+                    <input type="reset" value="Clear All Fields">
+                </fieldset>
+            </form>
+
+            <br>
+            <h3>Alternate Quick Connections</h3>
+            <p>You can also access my complete activity logs directly here:</p>
             <ul>
-                <li><a href="https://github.com/adityaparihar21" target="_blank">GitHub - adityaparihar21</a></li>
+                <li><strong>Main Hub:</strong> <a href="https://github.com/adityaparihar21" target="_blank">github.com/adityaparihar21</a></li>
             </ul>
         </section>
+
     </main>
 
+    <hr>
+
     <!-- FOOTER SECTION -->
-    <footer style="text-align: center; padding: 20px; background-color: #f8f9fa;">
-        <p>&copy; 2026 Aditya Parihar. All rights reserved.</p>
+    <footer align="center">
+        <p>&copy; 2026 Aditya Parihar. Built with structural HTML5 tags.</p>
     </footer>
 
 </body>
